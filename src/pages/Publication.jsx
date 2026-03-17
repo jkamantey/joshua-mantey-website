@@ -20,6 +20,20 @@ function Publications() {
           <div className="pub-section card">
             <h2>Journal Articles</h2>
             <article className="publication-item">
+              <p className="pub-authors">Amevor, R., Mantey, J.K.A., Nketiah, T.A.</p>
+              <p className="pub-title">
+                <a
+                  href="https://doi.org/10.5281/zenodo.18634390"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media-link"
+                >
+                  "Evaluation of AI-Based Predictive Models for Early Cancer Detection: Statistical Considerations and Validation Methods"
+                </a>
+              </p>
+              <p className="pub-venue"><em>Journal of Innovative Science</em>, Vol. 2, Issue 1, pp. 1–10, SARC Publisher, 2026</p>
+            </article>
+            <article className="publication-item">
               <p className="pub-authors">Mantey, J.K.A., Muntaka, I.</p>
               <p className="pub-title">
                 "Economic Evaluations of Advanced Drug-Delivery Platforms: Cost-Effectiveness Evidence in U.S Disease Contexts"
@@ -62,6 +76,32 @@ function Publications() {
             <article className="publication-item">
               <p className="pub-title">
                 <a
+                  href="https://coe.northeastern.edu/news/beyond-the-barrier-how-joshua-mantey-is-reimagining-oral-drug-delivery/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media-link"
+                >
+                  "Beyond the Barrier: How Joshua Mantey is Reimagining Oral Drug Delivery"
+                </a>
+              </p>
+              <p className="pub-venue"><em>Northeastern College of Engineering</em>, 2025</p>
+            </article>
+            <article className="publication-item">
+              <p className="pub-title">
+                <a
+                  href="https://www.myjoyonline.com/digital-intelligence-environmental-disaster-ais-hidden-climate-crisis/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media-link"
+                >
+                  "Digital Intelligence, Environmental Disaster: AI's Hidden Climate Crisis"
+                </a>
+              </p>
+              <p className="pub-venue"><em>MyJoyOnline</em>, 2026</p>
+            </article>
+            <article className="publication-item">
+              <p className="pub-title">
+                <a
                   href="https://www.myjoyonline.com/joshua-mantey-the-use-of-ai-in-drug-delivery/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -70,7 +110,7 @@ function Publications() {
                   "The Use of AI in Drug Delivery"
                 </a>
               </p>
-              <p className="pub-venue"><em>MyJoyOnline Interview</em>, 2024</p>
+              <p className="pub-venue"><em>MyJoyOnline Interview</em>, 2025</p>
             </article>
           </div>
         </div>

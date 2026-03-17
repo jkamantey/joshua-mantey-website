@@ -8,27 +8,21 @@ function Home() {
       <section className="hero section">
         <div className="container hero-grid">
           <div className="hero-copy fade-up">
-            <span className="pill">PhD Candidate · Chemical Engineering</span>
+            <span className="pill">PhD Candidate</span>
             <h1>Joshua Kojo Aduampong Mantey</h1>
             <p className="lead">
-              I build atomistic models and AI-assisted simulations to decode how
-              mucosal barriers respond to signaling molecules and bile salts,
-              enabling smarter oral drug delivery.
+              PhD researcher specializing in computational biology and applied machine learning, with hands on experience building end-to-end ML pipelines, processing multi-terabyte datasets, and deploying predictive models across pharmaceutical and biomedical domains. Proficient in Python (Scikit-learn, Pandas, NumPy), MongoDB, and time series analysis. Research grade experience running large scale MD simulations on HPC clusters complements applied ML work including molecular property prediction for oral drug delivery and ML based classification of HIV envelope protein binding pockets to support broadly neutralizing antibody development. Adept at translating complex scientific data into actionable insights.
             </p>
             <div className="hero-actions">
               <Link to="/research" className="btn primary">Explore Research</Link>
-              <a href="/files/Joshua-Mantey-CV.pdf" className="btn ghost" download>
-                Download CV
+              <a href="/files/CV_work__.pdf" className="btn ghost" download>
+                Download Resume
               </a>
             </div>
             <div className="hero-stats">
               <div>
                 <strong>5,200+</strong>
                 <span>MUC2 amino acids modeled</span>
-              </div>
-              <div>
-                <strong>AI/ML</strong>
-                <span>Trajectory insight pipelines</span>
               </div>
               <div>
                 <strong>Boston</strong>
@@ -40,11 +34,6 @@ function Home() {
             <div className="portrait-card">
               <img src="/images/joshuaImg.jpg" alt="Joshua Mantey" />
             </div>
-            <div className="floating-note">
-              <p className="eyebrow">Now</p>
-              <h3>Mucin-bile salt dynamics</h3>
-              <p>Atomistic insight into mucus permeability.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -53,7 +42,7 @@ function Home() {
         <div className="container">
           <div className="section-title">
             <h2>Research Focus</h2>
-            <span className="pill">Computational biophysics</span>
+            <span className="pill">Molecular Dynamics · Machine Learning · Drug Delivery</span>
           </div>
           <div className="grid focus-grid">
             <article className="card">
@@ -64,10 +53,11 @@ function Home() {
               </p>
             </article>
             <article className="card">
-              <h3>AI + Biophysics</h3>
+              <h3>Machine Learning</h3>
               <p>
-                ML-enhanced workflows for trajectory analysis, free energy
-                estimation, and hypothesis prioritization.
+                End-to-end ML pipelines for molecular property prediction,
+                trajectory analysis, and classification of HIV envelope
+                protein binding pockets.
               </p>
             </article>
             <article className="card">
@@ -89,19 +79,43 @@ function Home() {
           </div>
           <div className="grid highlight-grid">
             <div className="card">
-              <h3>AIChE Annual Meeting</h3>
-              <p>Presented bile salt-mucin interactions, Boston.</p>
-              <span className="tag">2024</span>
-            </div>
-            <div className="card">
-              <h3>NSF ACCESS Award</h3>
-              <p>Secured computational research allocation for MD workflows.</p>
+              <h3>
+                <a
+                  href="https://coe.northeastern.edu/news/beyond-the-barrier-how-joshua-mantey-is-reimagining-oral-drug-delivery/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Beyond the Barrier: How Joshua Mantey is Reimagining Oral Drug Delivery
+                </a>
+              </h3>
+              <p>Featured by Northeastern College of Engineering on research into oral drug delivery innovation.</p>
               <span className="tag">2025</span>
             </div>
             <div className="card">
-              <h3>Media Feature</h3>
-              <p>Interviewed on AI applications in drug delivery.</p>
-              <span className="tag">2024</span>
+              <h3>
+                <a
+                  href="https://www.myjoyonline.com/digital-intelligence-environmental-disaster-ais-hidden-climate-crisis/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Digital intelligence, environmental disaster: AI's hidden climate crisis
+                </a>
+              </h3>
+              <p>Discussed AI's environmental impact and hidden climate costs.</p>
+              <span className="tag">2026</span>
+            </div>
+            <div className="card">
+              <h3>
+                <a
+                  href="https://www.myjoyonline.com/joshua-mantey-the-use-of-ai-in-drug-delivery/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Role of AI in drug delivery
+                </a>
+              </h3>
+              <p>Featured interview on AI applications in drug delivery.</p>
+              <span className="tag">2025</span>
             </div>
           </div>
         </div>

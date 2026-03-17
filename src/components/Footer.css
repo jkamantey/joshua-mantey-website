@@ -1,7 +1,19 @@
 .footer {
-  padding: 3rem 0 2rem;
-  border-top: 1px solid rgba(15, 107, 100, 0.15);
-  background: rgba(255, 255, 255, 0.65);
+  padding: 3.5rem 0 2rem;
+  border-top: 1px solid rgba(31, 93, 97, 0.12);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 246, 248, 0.95) 100%);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 30%, var(--accent-2) 70%, transparent 100%);
+  opacity: 0.45;
 }
 
 .footer-container {

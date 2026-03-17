@@ -7,6 +7,7 @@ import Research from './pages/Research';
 import Publications from './pages/Publication';
 import CV from './pages/CV';
 import Contact from './pages/Contact';
+import Volunteerism from './pages/Volunteerism';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/publications" element={<Publications />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/volunteerism" element={<Volunteerism />} />
           </Routes>
         </main>
         <Footer />

@@ -8,10 +8,6 @@ function Contact() {
         <div className="container">
           <span className="pill">Contact</span>
           <h1>Let’s build something impactful together</h1>
-          <p className="lead">
-            Open to collaborations in molecular dynamics, AI-enabled analysis,
-            and translational biophysics.
-          </p>
         </div>
       </section>
 
@@ -20,13 +16,15 @@ function Contact() {
           <div className="card contact-info">
             <h2>Get In Touch</h2>
             <p>
-              I welcome conversations around research partnerships, conference
-              talks, and computational modeling opportunities.
+              I welcome conversations around career opportunities, internships,
+              research partnerships, consulting projects, conference speaking
+              engagements, and collaborative computational modeling and AI/ML
+              initiatives across all areas.
             </p>
 
             <div className="info-item">
               <h3>Email</h3>
-              <p><a href="mailto:mantey.j@northeastern.edu">mantey.j@northeastern.edu</a></p>
+              <p><a href="mailto:joshuamantey76@gmail.com">joshuamantey76@gmail.com</a></p>
             </div>
 
             <div className="info-item">
@@ -44,9 +42,6 @@ function Contact() {
               <div className="social-links">
                 <a href="https://www.linkedin.com/in/mantey-joshua" target="_blank" rel="noopener noreferrer">
                   LinkedIn
-                </a>
-                <a href="https://github.com/joshuamantey" target="_blank" rel="noopener noreferrer">
-                  GitHub
                 </a>
                 <a href="https://scholar.google.com/citations?user=8lAWa2sAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer">
                   Google Scholar

@@ -25,6 +25,34 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.cv-document h2 {
+  margin-bottom: 1rem;
+}
+
+.cv-pdf {
+  width: 100%;
+  height: min(85vh, 1100px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.cv-section {
+  margin-bottom: 1.4rem;
+}
+
+.cv-section-title {
+  display: block;
+  font-weight: 700;
+  color: var(--ink);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
 .cv-item {
   padding: 1.2rem 0;
   border-bottom: 1px solid rgba(20, 30, 30, 0.1);

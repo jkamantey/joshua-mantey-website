@@ -10,7 +10,7 @@ function Navbar() {
       <div className="nav-container">
         <NavLink to="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
           <span>Joshua Mantey</span>
-          <em>Computational Biophysics</em>
+          <em>AI/ML | Data Science | Chemical Engineer</em>
         </NavLink>
         <button
           className="nav-toggle"
@@ -56,7 +56,16 @@ function Navbar() {
               className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              CV
+              Resume
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/volunteerism"
+              className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              Community
             </NavLink>
           </li>
           <li className="nav-item">
