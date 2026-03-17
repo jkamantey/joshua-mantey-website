@@ -1,0 +1,56 @@
+.publications-hero {
+  padding-top: 5rem;
+}
+
+.publications-hero h1 {
+  font-size: clamp(2.2rem, 3vw, 3.1rem);
+  margin-top: 1rem;
+}
+
+.publications-hero .lead {
+  max-width: 640px;
+}
+
+.publications-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.pub-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.publication-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(20, 30, 30, 0.1);
+  overflow-wrap: anywhere;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.pub-authors {
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.pub-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.media-link {
+  color: var(--accent-3);
+  font-weight: 600;
+}
+
+.media-link:hover {
+  color: var(--accent);
+}
+
+.pub-venue {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
