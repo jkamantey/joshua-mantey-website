@@ -21,10 +21,6 @@ function Home() {
             </div>
             <div className="hero-stats">
               <div>
-                <strong>5,200+</strong>
-                <span>MUC2 amino acids modeled</span>
-              </div>
-              <div>
                 <strong>Boston</strong>
                 <span>SimBioSys Laboratory</span>
               </div>
