@@ -97,6 +97,16 @@
   font-weight: 700;
 }
 
+@media (max-width: 480px) {
+  .nav-logo em {
+    display: none;
+  }
+
+  .nav-logo span {
+    font-size: 1.15rem;
+  }
+}
+
 @media (max-width: 900px) {
   .nav-toggle {
     display: inline-flex;

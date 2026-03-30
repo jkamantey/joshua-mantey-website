@@ -71,3 +71,23 @@
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding-top: 3.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
