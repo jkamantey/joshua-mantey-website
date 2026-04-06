@@ -14,7 +14,7 @@ function CV() {
               dynamics, biomaterials, and computational modeling.
             </p>
           </div>
-          <a href="/files/CV_work__.pdf" className="btn primary" download>
+          <a href="/files/CV_Josh.pdf" className="btn primary" download>
             Download PDF
           </a>
         </div>
@@ -26,22 +26,22 @@ function CV() {
             <h2>Resume</h2>
             <div className="cv-pdf-desktop">
               <object
-                data="/files/CV_work__.pdf"
+                data="/files/CV_Josh.pdf"
                 type="application/pdf"
                 className="cv-pdf"
                 aria-label="Joshua Mantey Resume"
               >
                 <div className="cv-mobile-fallback">
                   <p>Unable to display PDF.</p>
-                  <a href="/files/CV_work__.pdf" className="btn primary" download>Download Resume</a>
+                  <a href="/files/CV_Josh.pdf" className="btn primary" download>Download Resume</a>
                 </div>
               </object>
             </div>
             <div className="cv-mobile-view">
               <p className="cv-mobile-msg">For the best experience, download or open the resume directly.</p>
               <div className="cv-mobile-actions">
-                <a href="/files/CV_work__.pdf" className="btn primary" download>Download Resume</a>
-                <a href="/files/CV_work__.pdf" className="btn ghost" target="_blank" rel="noopener noreferrer">Open in Browser</a>
+                <a href="/files/CV_Josh.pdf" className="btn primary" download>Download Resume</a>
+                <a href="/files/CV_Josh.pdf" className="btn ghost" target="_blank" rel="noopener noreferrer">Open in Browser</a>
               </div>
             </div>
           </section>

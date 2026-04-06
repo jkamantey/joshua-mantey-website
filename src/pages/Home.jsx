@@ -15,7 +15,7 @@ function Home() {
             </p>
             <div className="hero-actions">
               <Link to="/research" className="btn primary">Explore Research</Link>
-              <a href="/files/CV_work__.pdf" className="btn ghost" download>
+              <a href="/files/CV_Josh.pdf" className="btn ghost" download>
                 Download Resume
               </a>
             </div>
