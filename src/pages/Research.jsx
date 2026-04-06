@@ -1,24 +1,5 @@
 import React from 'react';
-import Button from '@mui/material/Button';
 import './Research.css';
-
-function TechPill({ label }) {
-  return (
-    <Button className="tech-pill" variant="outlined" fullWidth disableRipple>
-      <span className="tech-pill-label">{label}</span>
-    </Button>
-  );
-}
-
-function TechStack({ items }) {
-  return (
-    <div className="tech-stack">
-      {items.map((item, index) => (
-        <TechPill key={`${item}-${index}`} label={item} />
-      ))}
-    </div>
-  );
-}
 
 function Research() {
   return (
@@ -54,7 +35,6 @@ function Research() {
                 systems to quantify drug transport mechanisms through mucus barriers
                 for cystic fibrosis therapeutics.
               </p>
-              <TechStack items={['AMBER', 'NAMD', 'VMD', 'Python']} />
             </article>
 
             <article className="card project-card">
@@ -66,7 +46,6 @@ function Research() {
                 Partnering with Fred Hutchinson Cancer Center to map gp120/gp41
                 dynamics for vaccine development via MD and structural analysis.
               </p>
-              <TechStack items={['PyMOL', 'ChimeraX', 'MD', 'Python']} />
             </article>
 
             <article className="card project-card">
@@ -78,7 +57,6 @@ function Research() {
                 Modeled CO₂ adsorption on ammonium bicarbonate using molecular
                 dynamics and thermodynamic analysis to inform capture systems.
               </p>
-              <TechStack items={['Mol. Dynamics', 'Python', 'MATLAB', 'Fluent']} />
             </article>
 
             <article className="card project-card">
@@ -90,7 +68,6 @@ function Research() {
                 Engineered high-yield bioprocesses achieving 250 mg/L protein
                 production with FDA-aligned protocols and advanced control.
               </p>
-              <TechStack items={['Proc. Control', 'FDA Compliant', 'HAZOP']} />
             </article>
           </div>
         </div>
@@ -110,7 +87,7 @@ function Research() {
               </div>
               <p>
                 Engineered an end-to-end data pipeline processing 10,000+ real estate
-                listings to predict apartment prices in Mexico City’s Distrito Federal
+                listings to predict apartment prices in Mexico City's Distrito Federal
                 region using Ridge regression.
               </p>
               <p>
@@ -128,7 +105,6 @@ function Research() {
                 location features from unstructured address strings to improve
                 interpretability.
               </p>
-              <TechStack items={['Python', 'Pandas', 'Scikit-Lrn', 'ML']} />
             </article>
             <article className="card project-card">
               <div className="project-header">
@@ -155,7 +131,6 @@ function Research() {
                 including 3D temperature evolution and design charts, delivering quantitative
                 engineering recommendations for nuclear safety systems.
               </p>
-              <TechStack items={['Python', 'SciPy', 'NumPy', 'Comp. Modeling']} />
             </article>
             <article className="card project-card">
               <div className="project-header">
@@ -182,14 +157,6 @@ function Research() {
                 efficiency, throughput, safety regulations, and product quality
                 specifications.
               </p>
-              <TechStack
-                items={[
-                  'Thermal Proc.',
-                  'Proc. Control',
-                  'X-Functional Lead',
-                  'FDA/USDA'
-                ]}
-              />
             </article>
           </div>
         </div>
