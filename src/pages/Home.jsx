@@ -11,7 +11,10 @@ function Home() {
             <span className="pill">PhD Candidate</span>
             <h1>Joshua Kojo Aduampong Mantey</h1>
             <p className="lead">
-              PhD researcher specializing in computational biology and applied machine learning, with hands on experience building end-to-end ML pipelines, processing multi-terabyte datasets, and deploying predictive models across pharmaceutical and biomedical domains. Proficient in Python (Scikit-learn, Pandas, NumPy), MongoDB, and time series analysis. Research grade experience running large scale MD simulations on HPC clusters complements applied ML work including molecular property prediction for oral drug delivery and ML based classification of HIV envelope protein binding pockets to support broadly neutralizing antibody development. Adept at translating complex scientific data into actionable insights.
+              PhD researcher in computational biology and applied machine learning with extensive experience developing end-to-end ML pipelines, managing multi-terabyte datasets, and deploying predictive models in pharmaceutical and biomedical applications. Proficient in Python (Scikit-learn, Pandas, NumPy), MongoDB, and time-series analysis, with a strong foundation in data engineering and model optimization.
+            </p>
+            <p className="lead">
+              Brings research grade expertise in large-scale molecular dynamics simulations on high-performance computing (HPC) clusters, complementing applied machine learning work in molecular property prediction for oral drug delivery and ML-based classification of HIV envelope protein binding pockets to support broadly neutralizing antibody development. Skilled at translating complex biological and computational data into actionable insights that inform research strategy and accelerate scientific discovery.
             </p>
             <div className="hero-actions">
               <Link to="/research" className="btn primary">Explore Research</Link>
