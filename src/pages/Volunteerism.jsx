@@ -3,6 +3,38 @@ import './Volunteerism.css';
 
 const moments = [
   {
+    img: '/images/worldbank_presentation.JPG',
+    imgPosition: 'center top',
+    title: 'World Bank Youth Summit · Pitch Presentation',
+    role: 'Finalist & Award Winner · World Bank Group',
+    description:
+      'Presenting before judges and leaders at the World Bank Group headquarters, pitching an innovative solution to improve financial access for young farmers in emerging economies. Competing on a global stage and earning recognition at one of the world\'s most influential development institutions.',
+  },
+  {
+    img: '/images/worldbank_award.WEBP',
+    imgPosition: 'center center',
+    title: 'World Bank Youth Competition · Award Ceremony',
+    role: 'Award Recipient · World Bank Group',
+    description:
+      'Receiving a trophy and certificate at the World Bank Group award ceremony, a defining moment that affirms the power of young African voices in shaping global development conversations. Recognition at this level is a call to lead with even greater purpose.',
+  },
+  {
+    img: '/images/worldbank_team.WEBP',
+    imgPosition: 'center center',
+    title: 'World Bank Youth Summit · Team & Delegates',
+    role: 'Delegate · World Bank Group',
+    description:
+      'Alongside a remarkable cohort of young global leaders at the World Bank Group summit. Collaborating, exchanging ideas, and building networks with some of the brightest minds working to address the world\'s most pressing challenges through innovation and entrepreneurship.',
+  },
+  {
+    img: '/images/worldbank_certificate.JPG',
+    imgPosition: 'center center',
+    title: 'World Bank Youth Competition · Certificate of Excellence',
+    role: 'Award Winner · World Bank Group',
+    description:
+      'Holding the certificate and prize from the World Bank Youth Competition, a proud milestone earned through bold thinking, hard work, and an unwavering belief that science and entrepreneurship can drive meaningful change in communities across the globe.',
+  },
+  {
     img: '/images/aiche_presentation.jpeg',
     title: 'AIChE Annual Meeting · Boston 2025',
     role: 'Presenter & Delegate',
@@ -72,22 +104,6 @@ const moments = [
     role: 'Community & Friendship',
     description:
       'The best research teams are built on genuine friendships. Taking a break from simulations and scientific writing to hit the ice rink, a reminder that balance, joy, and community are just as essential as any academic milestone. Science is richer when surrounded by great people.',
-  },
-  {
-    img: '/images/worldbank_presentation.JPG',
-    imgPosition: 'center top',
-    title: 'World Bank Youth Summit · Pitch Presentation',
-    role: 'Finalist & Award Winner · World Bank Group',
-    description:
-      'Presenting before judges and leaders at the World Bank Group headquarters, pitching an innovative solution to improve financial access for young farmers in emerging economies. Competing on a global stage and earning recognition at one of the world\'s most influential development institutions.',
-  },
-  {
-    img: '/images/worldbank_award.WEBP',
-    imgPosition: 'center center',
-    title: 'World Bank Youth Competition · Award Ceremony',
-    role: 'Award Recipient · World Bank Group',
-    description:
-      'Receiving a trophy and certificate at the World Bank Group award ceremony, a defining moment that affirms the power of young African voices in shaping global development conversations. Recognition at this level is a call to lead with even greater purpose.',
   },
   {
     img: '/images/worldbank_team.WEBP',
