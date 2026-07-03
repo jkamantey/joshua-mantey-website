@@ -19,14 +19,6 @@ const moments = [
       'Receiving a trophy and certificate at the World Bank Group award ceremony, a defining moment that affirms the power of young African voices in shaping global development conversations. Recognition at this level is a call to lead with even greater purpose.',
   },
   {
-    img: '/images/worldbank_team.WEBP',
-    imgPosition: 'center center',
-    title: 'World Bank Youth Summit · Team & Delegates',
-    role: 'Delegate · World Bank Group',
-    description:
-      'Alongside a remarkable cohort of young global leaders at the World Bank Group summit. Collaborating, exchanging ideas, and building networks with some of the brightest minds working to address the world\'s most pressing challenges through innovation and entrepreneurship.',
-  },
-  {
     img: '/images/worldbank_certificate.JPG',
     imgPosition: 'center center',
     title: 'World Bank Youth Competition · Certificate of Excellence',
@@ -104,14 +96,6 @@ const moments = [
     role: 'Community & Friendship',
     description:
       'The best research teams are built on genuine friendships. Taking a break from simulations and scientific writing to hit the ice rink, a reminder that balance, joy, and community are just as essential as any academic milestone. Science is richer when surrounded by great people.',
-  },
-  {
-    img: '/images/worldbank_team.WEBP',
-    imgPosition: 'center center',
-    title: 'World Bank Youth Summit · Team & Delegates',
-    role: 'Delegate · World Bank Group',
-    description:
-      'Alongside a remarkable cohort of young global leaders at the World Bank Group summit. Collaborating, exchanging ideas, and building networks with some of the brightest minds working to address the world\'s most pressing challenges through innovation and entrepreneurship.',
   },
   {
     img: '/images/worldbank_certificate.JPG',
