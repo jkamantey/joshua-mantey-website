@@ -47,6 +47,40 @@ a {
   text-decoration: none;
 }
 
+/* ── Keyboard focus ──
+   Nothing here had a visible focus ring, which made the site unusable by
+   keyboard. :focus-visible keeps it off mouse clicks. */
+:focus-visible {
+  outline: 2px solid var(--accent-dark);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline-offset: 1px;
+}
+
+/* ── Skip link ── */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Fraunces', 'Georgia', serif;
   margin: 0 0 0.6rem;
@@ -208,19 +242,34 @@ p {
   gap: 1.5rem;
 }
 
-/* ── Animations ── */
-.fade-up {
-  animation: fadeUp 0.6s ease both;
+/* ── Animations ──
+   Entrance animation only where it is load-time, not scroll-triggered, and
+   only for visitors who have not asked for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fadeUp 0.5s ease both;
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes drift {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card:hover,
+  .btn:hover {
+    transform: none;
+  }
 }
 
 @media (max-width: 900px) {

@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# manteyjoshua.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal research site for Joshua Kojo Aduampong Mantey. React 19 + React Router
+on Vite, **prerendered to static HTML at build time**.
 
-## Available Scripts
+## Why it is prerendered
 
-In the project directory, you can run:
+A plain Vite/React SPA ships an empty `<div id="root">`. Anything that does not
+run JavaScript — LinkedIn and Slack link previews, some search and AI crawlers —
+therefore sees a blank page with only a title. The build now renders every route
+to real HTML so the content is in the markup, then lets React hydrate it.
 
-### `npm start`
+Check it any time with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run build
+grep -c mucus dist/index.html     # should be > 0, not 0
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Commands
 
-### `npm test`
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Dev server. Serves the empty shell and mounts client-side, which is fine for development. |
+| `npm run build` | Full production build: client bundle, SSR bundle, then prerender. Output in `dist/`. |
+| `npm run preview` | Serve `dist/` locally, exactly as deployed. |
+| `npm run og` | Regenerate `public/images/og-card.jpg` from `tools/og-card.html`. Needs Google Chrome. |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm run build` runs three steps in order:
 
-### `npm run build`
+1. `build:client` — normal Vite build into `dist/`.
+2. `build:ssr` — a server bundle of `src/entry-server.jsx` into `.ssr-build/` (gitignored, deleted afterwards).
+3. `prerender` — `scripts/prerender.mjs` renders each route and writes `dist/<route>/index.html`, plus `dist/sitemap.xml`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Adding or changing a page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Routes live in **two** places and both need updating:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/App.jsx` — the `<Route>` for rendering.
+- `src/site.js` — the `ROUTES` entry with that page's `title` and `description`.
 
-### `npm run eject`
+`src/site.js` is the single source of truth for the canonical URL, the per-page
+head tags, the sitemap and the JSON-LD. A route missing from it will not be
+prerendered and will not appear in the sitemap.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Social preview image
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`public/images/og-card.jpg` (1200×630) is generated from `tools/og-card.html`.
+Edit that file and run `npm run og`. It is currently built from a portrait —
+a render from your own simulations would be a stronger card.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After deploying a change to the card or to any page description, re-scrape the
+URL in the [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/),
+because LinkedIn caches previews aggressively.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deploying
 
-## Learn More
+`dist/` is committed to the repository, so build before committing:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+git add dist && git commit
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**One thing to check on the host:** if it has a catch-all SPA rewrite
+(`/*` → `/index.html`), remove it. Every route now has its own real
+`index.html`, and a catch-all would serve the homepage markup to crawlers for
+every URL, undoing the prerendering. Deep links work without it.

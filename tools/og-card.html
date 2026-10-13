@@ -1,0 +1,114 @@
+<!doctype html>
+<!--
+  Source for public/images/og-card.jpg, the 1200x630 social preview card.
+  Regenerate with:  npm run og
+
+  Swap the <img> for a render from your own simulations when you have one -- a
+  real MUC2/bile-salt snapshot would be a much stronger card than a portrait.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      html, body { width: 1200px; height: 630px; }
+
+      body {
+        display: flex;
+        background: #faf9f6;
+        font-family: 'Inter', -apple-system, sans-serif;
+        color: #0f172a;
+        overflow: hidden;
+      }
+
+      .copy {
+        flex: 1;
+        padding: 96px 56px 60px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .eyebrow {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #0f766e;
+        margin-bottom: 26px;
+      }
+
+      h1 {
+        font-family: 'Fraunces', Georgia, serif;
+        font-size: 66px;
+        font-weight: 700;
+        line-height: 1.04;
+        letter-spacing: -0.025em;
+        margin-bottom: 26px;
+      }
+
+      .line {
+        width: 74px;
+        height: 4px;
+        background: #0d9488;
+        margin-bottom: 26px;
+      }
+
+      p {
+        font-size: 27px;
+        line-height: 1.42;
+        color: #3f4a5c;
+        max-width: 18em;
+      }
+
+      .domain {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #64748b;
+      }
+
+      .portrait {
+        width: 430px;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* The source is a full-length portrait, so scale up and pull the crop
+         toward the head rather than showing the whole figure at thumbnail size. */
+      .portrait img {
+        width: 152%;
+        height: 152%;
+        margin: -12% 0 0 -26%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+      }
+
+      /* Feathers the photo into the page instead of a hard vertical seam. */
+      .portrait::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, #faf9f6 0%, rgba(250, 249, 246, 0) 24%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="copy">
+      <div class="eyebrow">Northeastern University &middot; SimBioSys Lab</div>
+      <h1>Joshua Mantey</h1>
+      <div class="line"></div>
+      <p>
+        Simulating how oral drugs cross the gut&rsquo;s mucus barrier.
+      </p>
+      <div class="domain">manteyjoshua.com</div>
+    </div>
+    <div class="portrait">
+      <img src="../public/images/Professional.jpeg" alt="" />
+    </div>
+  </body>
+</html>

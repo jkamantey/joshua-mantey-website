@@ -23,7 +23,11 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:client && npm run build:ssr && npm run prerender",
+    "build:client": "vite build",
+    "build:ssr": "vite build --ssr src/entry-server.jsx --outDir .ssr-build",
+    "prerender": "node scripts/prerender.mjs",
+    "og": "bash scripts/build-og-card.sh",
     "preview": "vite preview",
     "test": "echo \"No tests specified\" && exit 0"
   },
