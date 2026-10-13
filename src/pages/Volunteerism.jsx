@@ -5,105 +5,96 @@ const moments = [
   {
     img: '/images/worldbank_presentation.JPG',
     imgPosition: 'center top',
-    title: 'World Bank Youth Summit · Pitch Presentation',
-    role: 'Finalist & Award Winner · World Bank Group',
+    title: 'World Bank Group Youth Summit',
+    role: 'Finalist · Washington DC · 2026',
     description:
-      'Presenting before judges and leaders at the World Bank Group headquarters, pitching an innovative solution to improve financial access for young farmers in emerging economies. Competing on a global stage and earning recognition at one of the world\'s most influential development institutions.',
+      'Pitching Sankofa Fresh, the farmer-to-buyer marketplace I co-founded and build the data and AI side of. One of six finalists out of more than 700 teams from 150 countries.',
   },
   {
     img: '/images/worldbank_award.WEBP',
     imgPosition: 'center center',
-    title: 'World Bank Youth Competition · Award Ceremony',
-    role: 'Award Recipient · World Bank Group',
+    title: "People's Choice Award",
+    role: 'Outstanding Impact and Community Recognition',
     description:
-      'Receiving a trophy and certificate at the World Bank Group award ceremony, a defining moment that affirms the power of young African voices in shaping global development conversations. Recognition at this level is a call to lead with even greater purpose.',
+      'The award that came out of that summit was the one voted by the room, which I did not expect and still think is the better one to win.',
   },
   {
     img: '/images/worldbank_certificate.JPG',
     imgPosition: 'center center',
-    title: 'World Bank Youth Competition · Certificate of Excellence',
-    role: 'Award Winner · World Bank Group',
+    title: 'World Bank Youth Summit · certificate',
+    role: 'Award recipient',
+    description: 'Certificate and prize from the same summit.',
+  },
+  {
+    img: '/images/presentation.jpeg',
+    title: 'MUC2 molecular dynamics',
+    role: 'Presenter · AIChE Annual Meeting, Boston 2025',
     description:
-      'Holding the certificate and prize from the World Bank Youth Competition, a proud milestone earned through bold thinking, hard work, and an unwavering belief that science and entrepreneurship can drive meaningful change in communities across the globe.',
+      'Presenting the full-length MUC2 mucin simulations and the bile salt interactions we measured from them. Explaining a 3-million-atom system to a room in twelve minutes is its own skill, and I am still working on it.',
   },
   {
     img: '/images/aiche_presentation.jpeg',
-    title: 'AIChE Annual Meeting · Boston 2025',
-    role: 'Presenter & Delegate',
+    title: 'AIChE Annual Meeting',
+    role: 'Presenter · Northeastern University',
     description:
-      'Representing Northeastern University at the American Institute of Chemical Engineers Annual Meeting, one of the most prestigious gatherings in chemical and biomedical engineering. A testament to showing up on the world stage and making the African diaspora proud.',
-  },
-  {
-    img: '/images/Agsa_picture_ledleadership.jpeg',
-    title: 'AGSA Community Leadership',
-    role: 'Student Leader',
-    description:
-      'At the heart of a thriving African Graduate Student Association community. Helping build a space where African students feel seen, supported, and empowered to excel, because representation and belonging matter as much as any research milestone.',
+      'At the American Institute of Chemical Engineers annual meeting, representing the lab.',
   },
   {
     img: '/images/Agsa_career.jpeg',
-    title: 'AGSA Career Development Panel',
-    role: 'Moderator & Organizer',
+    title: 'AGSA career development panel',
+    role: 'Academic & Networking Chair · organizer and moderator',
     description:
-      'Facilitating career conversations that open doors. By organizing and moderating professional development panels, Joshua helps fellow African graduate students navigate their paths with confidence, bridging the gap between ambition and opportunity.',
+      'I organize and moderate these panels for the African Graduate Student Association. The useful part is rarely the talks; it is the twenty minutes afterwards when people ask the question they were too embarrassed to ask in the room.',
+  },
+  {
+    img: '/images/Agsa_picture_ledleadership.jpeg',
+    title: 'African Graduate Student Association',
+    role: 'Academic & Networking Chair · Mentorship Chair',
+    description:
+      'Mentorship and community work with African graduate students at Northeastern, including a webinar run with the Office of Global Services.',
   },
   {
     img: '/images/Moad_prizecompetition.jpeg',
-    title: 'MOAD NextGen Pitch Competition',
-    role: 'Award Winner · $500 Prize',
+    title: 'MOAD NextGen pitch competition',
+    role: 'Winner · $500 prize',
     description:
-      'Winning the Massachusetts Organization of African Descendants (MOAD) NextGen Pitch Competition is more than a prize. It is proof that bold ideas from the African diaspora deserve a platform. Innovation, community, and purpose all in one moment.',
-  },
-  {
-    img: '/images/FOG_event.jpeg',
-    title: 'Festival of Genomics & Biodata · Boston',
-    role: 'Conference Delegate',
-    description:
-      'Engaging at the intersection of genomics, biodata, and the future of medicine. Attending the Festival of Genomics & Biodata reflects a commitment to staying at the frontier, where computational biology meets translational impact for human health.',
+      'Won the Massachusetts Organization of African Descendants NextGen pitch competition.',
   },
   {
     img: '/images/lab_picture.jpeg',
     title: 'In the SimBioSys Laboratory',
-    role: 'PhD Researcher · Northeastern University',
+    role: 'Northeastern University',
     description:
-      'This is where discovery lives. Hours of focused work at the SimBioSys Lab, building machine learning pipelines, running molecular simulations, interpreting data, and turning scientific questions into answers that could one day improve how medicines reach patients with cystic fibrosis and beyond.',
+      'Where the simulations actually get built, run, and then re-run because the first setup was wrong.',
   },
   {
-    img: '/images/presentation.jpeg',
-    title: 'MUC2 Molecular Dynamics · Research Presentation',
-    role: 'Presenter · AIChE Boston',
+    img: '/images/FOG_event.jpeg',
+    title: 'Festival of Genomics & Biodata',
+    role: 'Delegate · Boston',
     description:
-      'Delivering a live presentation on modeling the full-length MUC2 mucin and its bile salt interactions using molecular dynamics simulations. Communicating complex science to an expert audience is a skill as vital as the research itself, and Joshua rises to that challenge with clarity and confidence.',
+      'Two days of genomics and biodata talks, mostly to find out what the experimental side is measuring that I should be simulating.',
+  },
+  {
+    img: '/images/With president of massachussetts life sciences.jpeg',
+    title: 'With the President of Massachusetts Life Sciences',
+    role: 'Industry engagement',
+    description:
+      'Massachusetts Life Sciences works on the policy and funding side of the state biotech sector, which is where a lot of this research eventually has to land.',
   },
   {
     img: '/images/Havard_businesss_school.jpeg',
     imgPosition: 'center center',
     title: 'Harvard Business School',
-    role: 'Academic Exploration · Boston, MA',
+    role: 'Boston, MA',
     description:
-      'Standing at the intersection of science and business. A visit to Harvard Business School reflects a broader ambition to bridge rigorous research with entrepreneurial vision, translating laboratory discoveries into real-world healthcare impact that reaches communities across the globe.',
-  },
-  {
-    img: '/images/With president of massachussetts life sciences.jpeg',
-    title: 'With the President of Massachusetts Life Sciences',
-    role: 'Professional Engagement',
-    description:
-      'A memorable encounter with the President of Massachusetts Life Sciences, the organization driving biotech and pharmaceutical innovation across the state. Moments like these reinforce the importance of connecting science with policy, industry, and leadership at the highest levels.',
+      'I am interested in how lab results turn into products, which is a different problem from the one I am trained for.',
   },
   {
     img: '/images/skating.jpeg',
-    title: 'Life Beyond the Lab',
-    role: 'Community & Friendship',
+    title: 'Off the clock',
+    role: 'Community',
     description:
-      'The best research teams are built on genuine friendships. Taking a break from simulations and scientific writing to hit the ice rink, a reminder that balance, joy, and community are just as essential as any academic milestone. Science is richer when surrounded by great people.',
-  },
-  {
-    img: '/images/worldbank_certificate.JPG',
-    imgPosition: 'center center',
-    title: 'World Bank Youth Competition · Certificate of Excellence',
-    role: 'Award Winner · World Bank Group',
-    description:
-      'Holding the certificate and prize from the World Bank Youth Competition, a proud milestone earned through bold thinking, hard work, and an unwavering belief that science and entrepreneurship can drive meaningful change in communities across the globe.',
+      'At the rink with friends from the program. I also cook a lot and play chess badly.',
   },
 ];
 
@@ -112,13 +103,12 @@ function Volunteerism() {
     <div className="page volunteerism-page">
       <section className="section volunteerism-hero">
         <div className="container">
-          <span className="pill">Community · Leadership · Impact</span>
-          <h1>Beyond the Bench</h1>
+          <span className="pill">Community</span>
+          <h1>Outside the simulations</h1>
           <p className="lead">
-            Science does not exist in isolation. Here is a glimpse into the
-            community engagement, leadership, and memorable moments that shape
-            Joshua's journey as a researcher, mentor, and member of the global
-            African diaspora.
+            Mentoring and organizing with the African Graduate Student
+            Association, a few competitions, and the conferences where the work
+            gets argued over.
           </p>
         </div>
       </section>
@@ -126,10 +116,15 @@ function Volunteerism() {
       <section className="section">
         <div className="container">
           <div className="vol-grid">
-            {moments.map((m, i) => (
-              <article className="vol-card" key={i}>
+            {moments.map((m) => (
+              <article className="vol-card" key={m.img + m.title}>
                 <div className="vol-img-wrap">
-                  <img src={m.img} alt={m.title} style={m.imgPosition ? { objectPosition: m.imgPosition } : undefined} />
+                  <img
+                    src={m.img}
+                    alt={m.title}
+                    loading="lazy"
+                    style={m.imgPosition ? { objectPosition: m.imgPosition } : undefined}
+                  />
                   <span className="vol-role-badge">{m.role}</span>
                 </div>
                 <div className="vol-body">

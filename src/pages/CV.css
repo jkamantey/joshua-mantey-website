@@ -23,11 +23,119 @@
   margin-top: 0.5rem;
 }
 
+.cv-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ── Education / experience / skills, in HTML so crawlers can read them ── */
+.cv-summary-section {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-summary {
+  max-width: 760px;
+}
+
+.cv-block + .cv-block {
+  margin-top: 2.75rem;
+}
+
+.cv-block h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-list {
+  margin: 0;
+}
+
+.cv-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.cv-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.cv-row dt {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.98rem;
+  flex: 1 1 22rem;
+}
+
+.cv-org {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.cv-row dd {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-skills {
+  margin: 0;
+}
+
+.cv-skills dt {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 1.1rem;
+}
+
+.cv-skills > div:first-child dt {
+  margin-top: 0;
+}
+
+.cv-skills dd {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
 .cv-document h2 {
   font-size: 1.4rem;
   margin-bottom: 1.25rem;
   padding-bottom: 0.75rem;
   border-bottom: 2px solid var(--line);
+}
+
+.cv-doc-note {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.cv-document + .cv-document {
+  margin-top: 2rem;
 }
 
 .cv-pdf {
@@ -83,5 +191,13 @@
   .cv-hero-inner .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .cv-hero-actions {
+    width: 100%;
+  }
+
+  .cv-row dd {
+    white-space: normal;
   }
 }

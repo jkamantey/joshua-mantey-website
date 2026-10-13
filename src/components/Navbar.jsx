@@ -17,7 +17,7 @@ function Navbar() {
       <div className="nav-container">
         <NavLink to="/" className="nav-logo">
           <span>Joshua Mantey</span>
-          <em>AI/ML | Data Science | Chemical Engineer</em>
+          <em>Molecular simulation of oral drug delivery</em>
         </NavLink>
         <ul className="nav-menu">
           {links.map(({ to, label }) => (

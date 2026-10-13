@@ -85,3 +85,20 @@
     padding-top: 3rem;
   }
 }
+
+/* Presentation type marker (oral vs poster) */
+.pub-kind {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  background: rgba(13, 148, 136, 0.1);
+  border: 1px solid rgba(13, 148, 136, 0.22);
+  vertical-align: 2px;
+}

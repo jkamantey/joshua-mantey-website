@@ -1,4 +1,5 @@
 import React from 'react';
+import { SCHOLAR } from '../site';
 import './Publication.css';
 
 function Publications() {
@@ -7,10 +8,19 @@ function Publications() {
       <section className="section publications-hero">
         <div className="container">
           <span className="pill">Publications</span>
-          <h1>Selected writing and presentations</h1>
+          <h1>Papers, talks and press</h1>
           <p className="lead">
-            Scholarly outputs spanning molecular simulations, materials
-            engineering, and translational health research.
+            Journal articles, conference presentations and media features. The
+            full list with citation counts is on{' '}
+            <a
+              href={SCHOLAR}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-link"
+            >
+              Google Scholar
+            </a>
+            .
           </p>
         </div>
       </section>
@@ -52,8 +62,17 @@ function Publications() {
             </article>
             <article className="publication-item">
               <p className="pub-authors">Agyei, D., Owusu-Kwarteng, J., Kehinde, B., Ohemeng-Boahen, G., Mantey, J.K.A.</p>
-              <p className="pub-title">"The Role of Indigenous Foods in Achieving Food Security in Africa"</p>
-              <p className="pub-venue">2024</p>
+              <p className="pub-title">
+                <a
+                  href="https://doi.org/10.1079/cabireviews.2024.0022"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="media-link"
+                >
+                  "The Role of Indigenous Foods in Achieving Food Security in Africa"
+                </a>
+              </p>
+              <p className="pub-venue"><em>CABI Reviews</em>, 2024 · doi:10.1079/cabireviews.2024.0022</p>
             </article>
           </div>
 
@@ -61,8 +80,10 @@ function Publications() {
             <h2>Conference Presentations</h2>
             <article className="publication-item">
               <p className="pub-authors">Mantey, J.K.A., Pandey, S., Carrier, R., Chakraborty, S.</p>
-              <p className="pub-title">"Enhanced Sampling to Study Interactions with Bile Salts"</p>
-              <p className="pub-venue"><em>AIChE Annual Meeting, Boston, MA</em>, November 2024</p>
+              <p className="pub-title">
+                "Enhanced Sampling to Study MUC2 Interactions with Bile Salts" <span className="pub-kind">Oral</span>
+              </p>
+              <p className="pub-venue"><em>AIChE Annual Meeting, Boston, MA</em>, November 2025</p>
             </article>
             <article className="publication-item">
               <p className="pub-authors">Mantey, J.K.A., Pandey, S., Chakraborty, S.</p>
